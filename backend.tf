@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "my-bucket-name"
-    key            = "path/to/my/key"
-    region         = "us-east-1"
-    use_lockfile   = true  # New parameter replacing dynamodb_table
+    bucket = "mydev-project-terraform-ashish-batch-26"
+    key = "main"
+    region = "us-east-1"
+    dynamodb_table = "my-dynamodb-table"
   }
 }
 
